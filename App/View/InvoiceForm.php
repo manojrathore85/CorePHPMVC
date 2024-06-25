@@ -94,7 +94,7 @@
                         foreach($data['items'] as $item){?>
                             <tr class="invoice-item">
                                 <td>
-                                <input type="text" class="form-control invoice-item-id" name="items[<?=$i?>][id]" value="<?=$item['id'] ?>" >
+                                <input type="hidden" class="form-control invoice-item-id" name="items[<?=$i?>][id]" value="<?=$item['id'] ?>" >
                                 <select class="form-control select2 item_id" name="items[<?=$i?>][item_id]" data-selected="<?=$item['item_id']?>">
                                     <?php renderOptions($items, $item['item_id']); ?>
                                 <!-- Populate with PHP -->
